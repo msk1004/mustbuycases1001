@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>マストバイアイテム 掲載事例集</title>
+<style>:root{--ink:#1d1d1f;--mute:#6b6b70;--line:#e3e1dc;--bg:#faf8f5;--card:#fff;--acc:#1f3a34}
+@media(prefers-color-scheme:dark){:root{--ink:#eee;--mute:#a3a3a8;--line:#3a3a3d;--bg:#161617;--card:#212123;--acc:#9fd0c2}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.8 "Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.hero{padding:48px 0 32px;border-bottom:1px solid var(--line)}
+.hero .tag{font-size:12px;letter-spacing:.14em;color:var(--mute)}
+.hero h1{font-size:30px;line-height:1.4;margin:6px 0 10px}
+.hero p{margin:0;color:var(--mute);max-width:44em}
+.hero-row{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.hero-row img{height:96px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:24px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.stat b{display:block;font-size:24px;color:var(--acc)}
+.stat span{font-size:12px;color:var(--mute)}
+.toc{display:flex;gap:8px;flex-wrap:wrap}
+.toc a{font-size:13px;padding:6px 14px;border:1px solid var(--line);border-radius:99px;color:var(--ink);text-decoration:none;background:var(--card)}
+.case{margin:40px 0;background:var(--card);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:12px;padding:24px}
+.case-head .no{font-size:12px;letter-spacing:.14em;color:var(--d);font-weight:700}
+.case-head h2{margin:2px 0;font-size:22px}
+.co{margin:0;color:var(--mute);font-size:14px}
+.case-body{display:grid;grid-template-columns:340px 1fr;gap:28px;margin-top:20px}
+.page{margin:0}
+.page img{width:100%;border:1px solid var(--line);border-radius:6px;display:block;background:#fff}
+figcaption{font-size:12px;color:var(--mute);margin-top:6px}
+h3{font-size:15px;margin:18px 0 8px;padding-left:10px;border-left:4px solid var(--c)}
+.info h3:first-child{margin-top:0}
+.spec{display:grid;grid-template-columns:9em 1fr;gap:6px 12px;margin:0;font-size:14px}
+.spec dt{color:var(--mute)}
+.spec dd{margin:0}
+.desc{font-size:14px;margin:10px 0}
+.chips{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{font-size:13px;padding:4px 12px;border-radius:99px;background:color-mix(in srgb,var(--c) 14%,transparent);border:1px solid var(--c)}
+.ck{color:var(--d);font-weight:700;margin-right:4px}
+.blank{display:inline-block;min-width:12em;min-height:1.6em;border-bottom:1.5px dashed var(--mute);background:color-mix(in srgb,var(--c) 7%,transparent);padding:0 6px;border-radius:3px;vertical-align:bottom}
+.blank:empty:before{content:attr(data-ph);color:var(--mute);font-size:12px}
+.blank:focus{outline:2px solid var(--c)}
+.blank.wide{display:block;min-height:5em;margin:0;border:1.5px dashed var(--mute);padding:6px 8px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+thead th{background:color-mix(in srgb,var(--c) 14%,transparent)}
+tbody th{font-weight:500;width:30%}
+td .blank{min-width:5em;width:100%}
+.note-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+h4{margin:0 0 6px;font-size:13px;color:var(--mute)}
+footer{padding:24px 0 48px;color:var(--mute);font-size:12px}
+footer li{margin:2px 0}
+@media(max-width:760px){.case-body,.note-grid{grid-template-columns:1fr}.page{max-width:340px}.hero h1{font-size:24px}}
+@media print{body{background:#fff}.case{break-inside:avoid}.toc{display:none}}
+
+.nuance{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:8px}
+.nu{border:1px solid var(--line);border-left:4px solid var(--c);border-radius:8px;padding:10px 14px;font-size:14px}
+.nu b{display:block;font-size:13px;color:var(--d);margin-bottom:2px}
+.nu p{margin:0}
+.voice{margin-top:16px}
+.lead{font-size:14px;color:var(--mute);margin:0 0 6px}
+.stat em{display:block;font-style:normal;font-size:12px;margin-top:6px;line-height:1.6}
+.stats{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.hl{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;background:color-mix(in srgb,var(--c) 10%,transparent);border-radius:8px;padding:10px 16px;margin-bottom:10px}.hl b{font-size:26px;color:var(--d)}.hl span{font-size:13px;color:var(--mute)}.vl{margin:0 0 8px;padding-left:1.2em;font-size:14px}.voice h3{margin-top:22px}</style></head><body>
+<header class="hero"><div class="wrap"><div class="hero-row"><div><div class="tag">MUST BUY ITEM ／ CASE STUDIES</div>
+<h1>マストバイアイテム<br>D2C・通販企業 掲載事例集</h1>
+<p>エステティック通信「マストバイアイテム2026」に掲載された3社の誌面と、WEB・LP・販促POP・量販店での展開を紹介します。各社の実施意図と担当者の声を中心に、媒体が持つ数字をもとに「掲載がどう働くか」を定性的にご紹介する形式です。</p></div>
+<img src="img/emblem.png" alt="MUST BUY エンブレム"></div>
+<div class="stats">
+<div class="stat"><b>90%</b><span>読者のサロン経営者（決裁権者）比率</span><em>購買の判断を担う層に届く媒体です。</em></div>
+<div class="stat"><b>93%</b><span>広告信頼度（読者調査）</span><em>「載っていること」自体が安心感になります。</em></div>
+<div class="stat"><b>36%</b><span>掲載後の導入契約率</span><em>読んで終わらず、商談・導入に進みやすい読者層です。</em></div>
+<div class="stat"><b>20,000部</b><span>発行部数／月（2004年創刊）</span><em>20年以上の継続が、媒体の信頼を支えています。</em></div></div>
+<nav class="toc"><a href="#mytrex">① MYTREX SHAPE POINTER</a><a href="#huron">② HURON+ チューニングウェア</a><a href="#rosyroy">③ ROSYROY アイラッシュブースティングセラム</a></nav></div></header>
+<main class="wrap">
+<section class="case" style="--c:#e19775;--d:#b8603a" id="mytrex">
+  <div class="case-head"><span class="no">CASE 01</span><h2>MYTREX SHAPE POINTER</h2><p class="co">株式会社創通メディカル　／　Keyword「リフトケア」</p></div>
+  <div class="case-body">
+    <figure class="page"><img src="img/mytrex_p1.png" alt="MYTREX SHAPE POINTER 掲載誌面"><figcaption>実際の掲載誌面（エステティック通信 2026年3月号）</figcaption></figure>
+    <div class="info">
+      <h3>掲載概要</h3>
+      <dl class="spec"><dt>企画</dt><dd>マストバイアイテム2026</dd><dt>キーワード</dt><dd>リフトケア</dd><dt>カテゴリ</dt><dd>美容機器（ペン型）</dd><dt>価格</dt><dd>12,980円（税込）</dd><dt>誌面コピー</dt><dd>ほぐし×マイクロカレント 5分で心身ともにリフレッシュ</dd></dl>
+      <p class="desc">ほぐしケアの「シェイプポイントヘッド」と、微弱電流の「マイクロカレントヘッド」の2つのアプローチができる美容機器。約40gのコンパクトな設計で、シンプルに使える点が特長。</p>
+      <h3>実施意図</h3><p class="desc">新商品であり、量販店の売場では比較的高価格帯となるため、「実績」と「視覚的に伝わるプロモーションツール」を求めて実施。</p><h3>D2C・通販企業としての展開</h3>
+      <ul class="chips"><li><span class="ck">✓</span>WEB・自社サイト</li><li><span class="ck">✓</span>LP</li><li><span class="ck">✓</span>販促POP</li><li><span class="ck">✓</span>量販店</li><li><span class="ck">✓</span>デモ時のトークスクリプト</li></ul>
+    </div>
+  </div>
+  <h3>掲載の価値を、数字から読み解く</h3>
+  <div class="nuance"><div class="nu"><b>サロン経営者の目線</b><p>決裁権者が9割を占める読者から「リフトケア」の注目機器として紹介された、という位置づけがつきます。</p></div><div class="nu"><b>価格帯との相性</b><p>12,980円は検討に慎重さが出やすい価格帯。専門誌の推薦という第三者の視点が、購入の背中を押す安心材料になります。</p></div><div class="nu"><b>訴求の分かりやすさ</b><p>「5分」「2つのアプローチ」という手軽さは、LPやPOPの短い言葉でも伝わりやすく、誌面との一貫性も保てます。</p></div></div>
+  <h3>展開シーン別の活かし方</h3>
+  <div class="nuance"><div class="nu"><b>WEB・LP</b><p>エンブレムと誌面画像をファーストビュー付近に置き、「サロン専門誌が選んだ」という根拠を最初に示す。</p></div><div class="nu"><b>販促POP</b><p>手に取る前の数秒で伝わるよう、エンブレム＋「リフトケア」のキーワードを前面に。</p></div><div class="nu"><b>量販店</b><p>美容機器の売場で、専門家の選定という違いを一目で示す役割。</p></div></div>
+  <div class="voice"><h3>メーカー担当者の声</h3><div class="hl"><b>100件超</b><span>サロンの新規獲得（掲載後1か月／営業活動を含む）</span></div><ul class="vl"><li>量販店では販促POPにエンブレムを使用。新商品でありながら「実績のある商品」として展開できた。</li><li>デモの際のトークスクリプトにも掲載実績を組み込めたことが、販売につながった要因ではないかとのお声をいただいています。</li><li>掲載をきっかけにサロン導入も増え、エステでの取り扱いにもつながったとのことです。</li></ul><p class="lead">※ヒアリング内容の要約。HURONとROSYROYは同メーカーとしていただいたお声です。</p></div>
+</section>
+<section class="case" style="--c:#5f9b72;--d:#3d7352" id="huron">
+  <div class="case-head"><span class="no">CASE 02</span><h2>HURON+ チューニングウェア</h2><p class="co">シュエット株式会社　／　Keyword「リカバリーウェア」</p></div>
+  <div class="case-body">
+    <figure class="page"><img src="img/huron_p1.png" alt="HURON+ チューニングウェア 掲載誌面"><figcaption>実際の掲載誌面（エステティック通信 2026年3月号）</figcaption></figure>
+    <div class="info">
+      <h3>掲載概要</h3>
+      <dl class="spec"><dt>企画</dt><dd>マストバイアイテム2026</dd><dt>キーワード</dt><dd>リカバリーウェア</dd><dt>カテゴリ</dt><dd>リカバリーウェア</dd><dt>価格</dt><dd>各9,000円（税込）</dd><dt>誌面コピー</dt><dd>筋肉の疲れをやわらげる管理医療機器認定ウェア</dd></dl>
+      <p class="desc">磁気のめぐりサポートで筋肉の疲れをやわらげる、医療機器認証取得のリカバリーウェア。40年以上のアパレル事業の経験を活かした上質な縫製とストレッチ素材が特長。</p>
+      <h3>実施意図</h3><p class="desc">毎年マストバイに参加し、これまで10製品で実施。「今、買うべき」というトレンド感を付けたいアイテムで活用。</p><h3>D2C・通販企業としての展開</h3>
+      <ul class="chips"><li><span class="ck">✓</span>WEB・自社サイト</li><li><span class="ck">✓</span>LP</li><li><span class="ck">✓</span>販促POP</li><li><span class="ck">✓</span>量販店</li><li><span class="ck">✓</span>EC</li><li><span class="ck">✓</span>ライブコマース</li><li><span class="ck">✓</span>ポップアップイベント</li></ul>
+    </div>
+  </div>
+  <h3>掲載の価値を、数字から読み解く</h3>
+  <div class="nuance"><div class="nu"><b>信頼性の重ね合わせ</b><p>「医療機器認証」という製品の根拠に、「専門誌の選定」という第三者評価が加わり、信頼の裏付けが二重になります。</p></div><div class="nu"><b>日常使いの価格帯</b><p>9,000円は日常に取り入れやすい価格。サロンの店販だけでなく、一般の購入者にも説明しやすい根拠になります。</p></div><div class="nu"><b>広告信頼度の高い媒体</b><p>広告信頼度93%の媒体に掲載されたという事実が、ブランドの安心感に結びつきます。</p></div></div>
+  <h3>展開シーン別の活かし方</h3>
+  <div class="nuance"><div class="nu"><b>WEB・LP</b><p>「管理医療機器認定」と「専門誌選定」を並べ、性能面と第三者評価の両方を一画面で伝える。</p></div><div class="nu"><b>販促POP</b><p>ウェアは着用感が見えにくいため、エンブレムで「選ばれた理由」を補う。</p></div><div class="nu"><b>量販店</b><p>多くの商品が並ぶ売場で、専門誌の選定という差別化の一言として機能。</p></div></div>
+  <div class="voice"><h3>メーカー担当者の声</h3><div class="hl"><b>毎月伸長</b><span>掲載後約1年の売上推移（イベント等との相乗効果を含む）</span></div><ul class="vl"><li>ライブコマース、ECサイト、量販店、ポップアップイベントでの実績として活用。</li><li>「美容のプロが選んだ」ことを示せる点に加え、業界誌の企画のため大手メーカーの製品が使っていないエンブレム自体が、差別化にもなっていると感じているとのことです。</li><li>掲載後はイベントなどでも使用し、この企画だけの結果ではないものの、売上はこの1年、毎月伸び続けているとのお声をいただいています。</li></ul><p class="lead">※ヒアリング内容の要約。HURONとROSYROYは同メーカーとしていただいたお声です。</p></div>
+</section>
+<section class="case" style="--c:#e4472f;--d:#b52f1a" id="rosyroy">
+  <div class="case-head"><span class="no">CASE 03</span><h2>ROSYROY アイラッシュブースティングセラム</h2><p class="co">株式会社ジャスティ　／　Keyword「韓国美容」</p></div>
+  <div class="case-body">
+    <figure class="page"><img src="img/rosyroy_p1.png" alt="ROSYROY アイラッシュブースティングセラム 掲載誌面"><figcaption>実際の掲載誌面（エステティック通信 2026年3月号）</figcaption></figure>
+    <div class="info">
+      <h3>掲載概要</h3>
+      <dl class="spec"><dt>企画</dt><dd>マストバイアイテム2026</dd><dt>キーワード</dt><dd>韓国美容</dd><dt>カテゴリ</dt><dd>まつ毛美容液</dd><dt>価格</dt><dd>9ml／8,800円（税込）</dd><dt>誌面コピー</dt><dd>世界水準の成分を活用 長く、太く、強いまつ毛に</dd></dl>
+      <p class="desc">AAPEを筆頭に、5つのペプチドと独自のエクソソーム、ヒト脂肪幹細胞培養液を配合。ブラシ・ボールの両タイプ一体のデザインで細部までケアしやすい。</p>
+      <h3>実施意図</h3><p class="desc">毎年マストバイに参加し、これまで10製品で実施。「今、買うべき」というトレンド感を付けたいアイテムで活用。</p><h3>D2C・通販企業としての展開</h3>
+      <ul class="chips"><li><span class="ck">✓</span>WEB・自社サイト</li><li><span class="ck">✓</span>LP</li><li><span class="ck">✓</span>販促POP</li><li><span class="ck">✓</span>量販店</li><li><span class="ck">✓</span>EC</li><li><span class="ck">✓</span>ライブコマース</li><li><span class="ck">✓</span>ポップアップイベント</li></ul>
+    </div>
+  </div>
+  <h3>掲載の価値を、数字から読み解く</h3>
+  <div class="nuance"><div class="nu"><b>成分トレンドとの重なり</b><p>2027年の投票でもペプチドやエクソソームが上位に並ぶなど、成分への関心は高く、製品の方向性と重なります。</p></div><div class="nu"><b>韓国美容という切り口</b><p>「韓国美容」のキーワードで紹介されることで、成分や話題性を求める読者にも届きやすくなります。</p></div><div class="nu"><b>まつ毛美容液の選びにくさ</b><p>似た製品が多い中、専門誌の選定は「どれを選べばよいか」の判断材料になります。</p></div></div>
+  <h3>展開シーン別の活かし方</h3>
+  <div class="nuance"><div class="nu"><b>WEB・LP</b><p>成分の説明にエンブレムを添え、専門的な内容に説得力を持たせる。</p></div><div class="nu"><b>販促POP</b><p>成分名が並ぶ訴求に、「選ばれた」という分かりやすい一言を加える。</p></div><div class="nu"><b>量販店</b><p>価格の近い競合の中で、第三者の選定という判断材料を店頭で示す。</p></div></div>
+  <div class="voice"><h3>メーカー担当者の声</h3><div class="hl"><b>毎月伸長</b><span>掲載後約1年の売上推移（イベント等との相乗効果を含む）</span></div><ul class="vl"><li>ライブコマース、ECサイト、量販店、ポップアップイベントでの実績として活用。</li><li>「美容のプロが選んだ」ことを示せる点に加え、業界誌の企画のため大手メーカーの製品が使っていないエンブレム自体が、差別化にもなっていると感じているとのことです。</li><li>掲載後はイベントなどでも使用し、この企画だけの結果ではないものの、売上はこの1年、毎月伸び続けているとのお声をいただいています。</li></ul><p class="lead">※ヒアリング内容の要約。HURONとROSYROYは同メーカーとしていただいたお声です。</p></div>
+</section></main>
+<footer><div class="wrap"><ul>
+<li>誌面画像は ©2026 エステティック通信編集局 使用許諾済み（第202603号）。</li>
+<li>各社のエンブレム使用権は発表号から1年間（HP・LP・販促POP・店頭什器など）。</li>
+<li>「価値」「活かし方」の記述は、誌面内容と媒体実績をもとにした編集上の見立てであり、個社の販売成果を示すものではありません。メーカー担当者の声は各社へのヒアリングによるもので、他の施策との相乗効果を含みます。</li>
+<li>株式会社新東通信 東京本社 2ユニット エステティック通信チーム ／ esutsu.info@shinto-tsushin.co.jp ／ 03-4500-3480</li></ul></div></footer>
+</body></html>
